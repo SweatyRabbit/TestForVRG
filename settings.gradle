@@ -1,0 +1,2 @@
+rootProject.name = "TestForVRGSoft"
+include ':app'
