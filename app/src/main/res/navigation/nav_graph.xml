@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/listPublicationsFragment">
+
+
+    <fragment
+        android:id="@+id/listPublicationsFragment"
+        android:name="com.example.testforvrgsoft.ui.ListPublicationsFragment"
+        android:label="ListPublicationsFragment"
+        tools:layout="@layout/fragment_list_publications" >
+        <action
+            android:id="@+id/action_listPublicationsFragment_to_photoFragment"
+            app:destination="@id/photoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/photoFragment"
+        android:name="com.example.testforvrgsoft.ui.PhotoFragment"
+        android:label="PhotoFragment"
+        tools:layout="@layout/fragment_photo" />
+
+
+</navigation>
